@@ -6,7 +6,7 @@ function Weather1() {
   const [error, setError] = useState("");
   const [city, setCity] = useState("");
 
-  const apikey = "dcf6e9b674658bbc68a4fe75fc91a0fc";
+  const apikey = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   // Function to handle the actual API call
   const getWeather = () => {
